@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cuadro{
+    display: flex;
+    background-image: linear-gradient(to left, #000000, #434343);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 80px;
+    color: aliceblue;
+}
+
+#section-1{
+    background-color:crimson;
+    height: 150px;
+}
+
+#barraDeColores{
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    height: 50px;
+}
+
+@keyframes colores{
+
+0%{
+    background-color: rgb(255, 0, 0);
+
+}
+25%{
+    background-color: rgb(114, 0, 0);
+
+}
+50%{
+    background-color: rgb(59, 0, 0);
+
+}
+75%{
+    background-color: rgb(9, 0, 59);
+
+}
+100%{
+    background-color: rgb(25, 0, 167);
+
+}
+
+}
+
+#section-2{
+    background-color:darkslateblue;
+}
+
+div{
+    background-color: black;
+    color: white;
+    transition: all 2.5s;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 30% 30% 10%;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    gap: 1px 1px;
+}
+
+
+#item-1:hover{
+    background-color: #6dd5ed;
+    color:black;
+}
+#item-2:hover{
+    background-color: #2C5364;
+    color:black;
+    transform: translate(100px, 50px);
+}
+#item-3:hover{
+    background-color: #f64f59;
+    color:black;
+    transition-delay: 300ms;
+}
+#item-4:hover{
+    background-color: #a8ff78;
+    color:black;
+    transform: rotate(360deg);
+}
+#item-5:hover{
+    background-color: #000046;
+    color:black;
+    transform: scale(.3, .8);
+}
+
+
+footer{
+    background-image: linear-gradient(to left, #41295a, #2F0743);
+    height: 100px;
+}
+
+footer h5{
+    color: aliceblue;
+    text-align: center;
+}
